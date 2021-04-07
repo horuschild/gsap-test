@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOTR</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        background: rgb(231, 231, 231);
+        color: rgb(90, 90, 90);
+      }
+      .container-wrapper {
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container-one {
+        height: 40%;
+        width: 40%;
+        background: #f3f3f3;
+        border-radius: 5px;
+        margin: 15px;
+        box-shadow: 5px 5px 15px #d4d4d4;
+        overflow: hidden;
+      }
+      .container-two {
+        overflow: hidden;
+        height: 40%;
+        width: 40%;
+        background: #f1f1f1;
+        border-radius: 5px;
+        margin: 15px;
+        box-shadow: 5px 5px 15px #d4d4d4;
+      }
+      .inner {
+        width: 100%;
+        height: 70px;
+        background: crimson;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .line {
+        width: 30%;
+        height: 10px;
+        background: grey;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+      }
+      .line.one {
+        margin-top: 40px;
+      }
+      .line.two {
+        background: lightgrey;
+        width: 65%;
+      }
+      .line.three {
+        background: lightgrey;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">One Ring To Rule Them All</h1>
+    <div class="container-wrapper">
+      <div class="container-one">
+        <div class="inner">Legolas</div>
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+      </div>
+      <div class="container-two">
+        <div class="inner">Aragorn</div>
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
